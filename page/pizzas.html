@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../index.css">
+    <title>Pizzas</title>
+</head>
+<body>
+    <div class="principal">
+        <header>
+            <a href="../index.html"><img src="../img/logo.png" alt=" AltaHambre"></a>
+            <nav id="nav">
+                <ul>
+                    <li> <a href="../index.html">Inicio</a></li>
+                    <li> <a href="../page/hamburguesas.html">Hamburguesas</a></li>
+                    <li> <a href="../page/pizzas.html">Pizzas</a></li>
+                    <li> <a href="../page/bebidas.html">Bebidas</a></li>
+                    <a href="../carrito.html"><img src="../img/carrito.png" class="carrito" alt="Carrito"><span id="cuenta-carrito">0</span></a>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultar()"><i class="fa-solid fa-burger"></i></div>
+        </header>
+    </div>
+    <section id="producto-contenedor" ></section>
+    <footer>
+        <p>@ Todos los derechos resevados a AltaHambre</p>
+            </footer>
+    <script src="../index.js" defer></script>
+    <script>document.addEventListener("DOMContentLoaded", () => {
+        mostrarProductos("Pizzas");
+    })
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Tu compra</title>
+</head>
+
+<body>
+    <div class="principal">
+        <header>
+            <a href="./index.html"><img src="./img/logo.png" alt=" AltaHambre"></a>
+            <div id="carrito-contenedor">
+                <a href="./carrito.html"><img src="img/carrito.png" class="carrito" alt="Carrito"><span
+                        id="cuenta-carrito">0</span></a>
+            </div>
+            </div>
+        </header>
+    </div>
+    <main id="productos-carrito"></main>
+    <section id="totales">
+        <div>
+            <p> Total productos:<span id="unidades">0</span></p>
+            <h2 class="subTotal" id="subTotal"> SubTotal: <span id="cuenta-carrito">0</span> </h2>
+            <div class="btn">
+                <button id="confirmar">Comprar</button>
+                <button id="reiniciar">Reinicar Compra</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>@ Todos los derechos resevados a AltaHambre</p>
+    </footer>
+    <script src="./carrito.js" defer></script>
+   
+  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
